@@ -151,139 +151,43 @@ body, h1, h2 {
 
 /* Mobile optimizations */
 @media only screen and (max-width: 600px) {
-    .bgimg {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url('Images/sideimg.png'); 
-        min-height: 30vh; /* Decreased min-height for smaller screens */
-        width: 100%; /* Adjusted width for smaller screens */
-        position: fixed; /* Make the background image fixed */
-    }
-
     .content {
-        padding: 20px 16px; /* Adjusted padding for smaller screens */
-        width: 100%; /* Adjusted width for smaller screens */
         text-align: center;
-        overflow-y: scroll; /* Make the content scrollable */
-        height: calc(100vh - 40px); /* Set the height of the scrollable section to 100% of the viewport height */
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
-        position: relative;
-        top: 30vh; /* Adjusted vertical position to leave space for the image */
     }
 
     .content h1 {
-        font-size: 32px; /* Adjusted font size for smaller screens */
-        margin-bottom: 16px; /* Adjusted margin for smaller screens */
-        color: #000000;
+        margin-bottom: 16px;
+        color: #ffffff; /* Change text color to white */
     }
 
     .content h2 {
-        font-size: 1em; /* Adjusted font size for smaller screens */
-        margin-bottom: 24px; /* Adjusted margin for smaller screens */
-        color: #666;
+        margin-bottom: 24px;
+        color: #ffffff; /* Change text color to white */
     }
 
     .download-btn {
-        background-color: rgba(111, 111, 111, 0.09); /* Translucent green color */
-        color: rgb(0, 0, 0);
-        padding: 10px 20px; /* Adjusted padding for smaller screens */
-        font-size: 0.8em; /* Adjusted font size for smaller screens */
-        font-family: 'Century Gothic';
+        background-color: transparent; /* Make background transparent */
+        color: #ffffff; /* Change text color to white */
         border: none;
         cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
+        font-size: 16px; /* Adjust font size */
+        padding: 10px 20px; /* Adjust padding */
     }
 
     .download-btn:hover {
-        background-color: #eefafe; /* Translucent green color on hover */
-    }
-
-    .download-btn i {
-        margin-right: 8px; /* Spacing between text and icon */
+        background-color: rgba(255, 255, 255, 0.2); /* Add transparent background color on hover */
     }
 
     .hamburger-btn {
-        position: fixed;
-        top: 10px; /* Adjusted top position for smaller screens */
-        right: 10px; /* Adjusted right position for smaller screens */
-        cursor: pointer;
-        z-index: 2;
-        font-size: 24px; /* Adjusted font size for smaller screens */
-        transition: color 0.3s; /* Add a transition for smooth color change */
+        color: #ffffff; /* Change hamburger icon color to white */
     }
 
     /* Navigation menu styles */
     .overlay {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        top: 0;
-        left: 0; /* Set left position to 0 for smaller screens */
-        background-color: rgb(18, 18, 18);
-        overflow-x: hidden;
-        transition: 0.5s;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .overlay.show {
-        width: 100%; /* Adjust width to cover the entire screen */
+        background-color: rgba(18, 18, 18, 0.9); /* Add translucent background color */
     }
 
     .overlay a {
-        padding: 10px; /* Adjusted padding for smaller screens */
-        font-size: 16px; /* Adjusted font size for smaller screens */
-        color: #fff;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    .overlay a:hover,
-    .overlay a:focus {
-        color: #00AFEF;
-    }
-
-    /* Hamburger button animation styles */
-    .menu-bar {
-        width: 15px; /* Adjusted width for smaller screens */
-        height: 2px; /* Adjusted height for smaller screens */
-        background-color: #000;
-        margin: 3px 0; /* Adjusted margin for smaller screens */
-        transition: transform 0.5s, opacity 0.5s;
-    }
-
-    .hamburger-btn.open .menu-bar:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 6px);
-        background-color: #fff;
-    }
-
-    .hamburger-btn.open .menu-bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger-btn.open .menu-bar:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -6px);
-        background-color: #fff;
-    }
-
-    .bottom-image {
-        position: relative; /* Use relative positioning */
-        top: 120px; /* Adjusted vertical position for smaller screens */
-        left: 5%; /* Adjusted horizontal position for smaller screens */
-        text-align: left;
-    }
-
-    .bottom-image img {
-        width: 100%;
-        max-width: 100%; /* Adjusted maximum width for smaller screens */
-        height: auto;
-        display: block;
-        margin: 0 auto;
+        color: #ffffff; /* Change navigation text color to white */
     }
 }
