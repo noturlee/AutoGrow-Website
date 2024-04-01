@@ -211,7 +211,7 @@ body, h1, h2 {
     width: 0;
     position: fixed;
     top: 0;
-    left: 40%; /* Set left position to the width of the image section */
+    left: 0%; /* Set left position to the width of the image section */
     background-color: rgb(18, 18, 18);
     overflow-x: hidden;
     transition: 0.5s;
@@ -223,7 +223,7 @@ body, h1, h2 {
 }
 
 .overlay.show {
-    width: 62%; /* Adjust width to cover the remaining section */
+    width: 100%; /* Adjust width to cover the remaining section */
 }
 
     .menu-bar {
