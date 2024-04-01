@@ -172,12 +172,14 @@ body, h1, h2 {
         top: 30vh; /* Adjusted vertical position to leave space for the image */
     }
 
-    .content h1 {
-        font-size: 32px; /* Adjusted font size for smaller screens */
-        margin-bottom: 16px; /* Adjusted margin for smaller screens */
-        color: #ffffff; /* Change text color to white */
-        padding-right: 50px;
-    }
+.content h1 {
+    font-size: 32px; /* Adjusted font size for smaller screens */
+    margin-bottom: 16px; /* Adjusted margin for smaller screens */
+    color: #ffffff; /* Change text color to white */
+    padding-right: 50px; /* Adjusted padding-right */
+    display: inline-block; /* Ensure the text remains on one line */
+}
+
 
     .content h2 {
         font-size: 1em; /* Adjusted font size for smaller screens */
