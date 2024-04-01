@@ -162,7 +162,7 @@ body, h1, h2 {
     }
 
     .content {
-        padding: 40px 16px; /* Adjusted padding for smaller screens */
+        padding: 20px 16px; /* Adjusted padding for smaller screens */
         width: 100%; /* Adjusted width for smaller screens */
         text-align: center;
         overflow-y: scroll; /* Make the content scrollable */
