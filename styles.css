@@ -196,15 +196,7 @@ body, h1, h2 {
         padding: 10px 20px; /* Adjust padding */
     }
     
-.menu-bar{
-    
-        background-color: #000;
-        transition: transform 0.5s, opacity 0.5s;
-}
 
-    .overlay.show {
-    width: 100%; /* Adjust width to cover the remaining section */
-}
 
     .download-btn:hover {
         background-color: rgba(255, 255, 255, 0.2); /* Add transparent background color on hover */
@@ -213,6 +205,35 @@ body, h1, h2 {
     .download-btn i {
         margin-right: 8px; /* Spacing between text and icon */
     }
+
+    .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 40%; /* Set left position to the width of the image section */
+    background-color: rgb(18, 18, 18);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay.show {
+    width: 62%; /* Adjust width to cover the remaining section */
+}
+
+    .menu-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
 
     .hamburger-btn {
         color: #fff; /* Change hamburger icon color to white */
