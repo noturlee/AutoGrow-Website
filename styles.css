@@ -151,17 +151,36 @@ body, h1, h2 {
 
 /* Mobile optimizations */
 @media only screen and (max-width: 600px) {
+    .bgimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('Images/sideimg.png'); 
+        min-height: 30vh; /* Decreased min-height for smaller screens */
+        width: 100%; /* Adjusted width for smaller screens */
+        position: fixed; /* Make the background image fixed */
+    }
+
     .content {
+        padding: 40px 16px; /* Adjusted padding for smaller screens */
+        width: 100%; /* Adjusted width for smaller screens */
         text-align: center;
+        overflow-y: scroll; /* Make the content scrollable */
+        height: calc(100vh - 40px); /* Set the height of the scrollable section to 100% of the viewport height */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        position: relative;
+        top: 30vh; /* Adjusted vertical position to leave space for the image */
     }
 
     .content h1 {
-        margin-bottom: 16px;
+        font-size: 32px; /* Adjusted font size for smaller screens */
+        margin-bottom: 16px; /* Adjusted margin for smaller screens */
         color: #ffffff; /* Change text color to white */
     }
 
     .content h2 {
-        margin-bottom: 24px;
+        font-size: 1em; /* Adjusted font size for smaller screens */
+        margin-bottom: 24px; /* Adjusted margin for smaller screens */
         color: #ffffff; /* Change text color to white */
     }
 
@@ -176,6 +195,10 @@ body, h1, h2 {
 
     .download-btn:hover {
         background-color: rgba(255, 255, 255, 0.2); /* Add transparent background color on hover */
+    }
+
+    .download-btn i {
+        margin-right: 8px; /* Spacing between text and icon */
     }
 
     .hamburger-btn {
