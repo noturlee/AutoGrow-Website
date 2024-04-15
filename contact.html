@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+</head>
+<body>
+  
+  <div class="hamburger-btn" onclick="toggleMenu()">
+    <div class="menu-bar"></div>
+    <div class="menu-bar"></div>
+    <div class="menu-bar"></div>
+  </div>
+
+  <!-- Navigation menu overlay -->
+  <div id="overlay" class="overlay">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="community.html">Community</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="container">
+    
+    <h1>Reach for the future</h1>
+    <p>We'd love to hear from you. Please fill out the form below to get in touch!</p>
+    <form id="contact-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="social-links">
+      <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

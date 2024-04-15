@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  background-image: url('https://th.bing.com/th/id/R.c15cfe39a0569489ba37ca08bade763b?rik=hozv5xoCTe%2b9Ow&pid=ImgRaw&r=0');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 600px;
+  margin: 120px auto;
+  padding: 20px;
+  backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hamburger-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 40px;
+  transition: color 0.3s; /* Add a transition for smooth color change */
+}
+
+
+/* Navigation menu styles */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  background-color: rgb(15, 15, 15);
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay.show {
+  width: 100%; /* Adjust width to cover the remaining section */
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #00AFEF;
+}
+/* Hamburger button animation styles */
+.menu-bar {
+width: 30px;
+height: 3px;
+background-color: #ffffff;
+margin: 5px 0;
+transition: transform 0.5s, opacity 0.5s;
+}
+
+
+.hamburger-btn.open .menu-bar:nth-child(1) {
+transform: rotate(45deg) translate(5px, 6px);
+background-color: #fff;
+}
+
+.hamburger-btn.open .menu-bar:nth-child(2) {
+opacity: 0;
+}
+
+.hamburger-btn.open .menu-bar:nth-child(3) {
+transform: rotate(-45deg) translate(5px, -6px);
+background-color: #fff;
+}
+
+
+
+
+
+.overlay a {
+  padding: 15px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #00AFEF;
+}
+
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0b8867;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0078a0;
+}
+
+.social-links {
+  margin-top: 30px;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+}
+
+.facebook {
+  color: #1877f2;
+
+}
+
+.twitter {
+  color: #1da1f2;
+
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.instagram {
+  color: #833ab4;
+}
+
+
