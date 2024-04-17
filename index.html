@@ -6,6 +6,34 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="script.js"></script>
+  <style>
+    /* Add this CSS for button fill effect */
+    .download-btn {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .download-btn::before,
+    .download-btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #00AFEF; /* Change to the desired fill color */
+      transition: width 0.3s ease-in-out;
+    }
+
+    .download-btn::before {
+      left: 100%;
+    }
+
+    .download-btn:hover::before,
+    .download-btn:hover::after {
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
     <div class="hamburger-btn" onclick="toggleMenu()">
@@ -27,7 +55,8 @@
 <div class="content">
   <h1><strong style="color: #373737;">AutoGrow Solutions</strong></h1>
   <h2>Cultivating Automated Growth</h2> 
-  <a href="Documents/Brochure.pdf" class="download-btn" download>
+  <!-- Anchor tag to open the PDF file -->
+  <a href="Brochure.pdf" class="download-btn" download>
     <i class="fa fa-download"></i> Download Brochure
   </a>
 </div>
