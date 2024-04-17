@@ -47,36 +47,32 @@
         color: #666;
         margin-bottom: 54px; 
       }
-  
-/* Button style */
+
+/* Add this CSS for button fill effect */
 .download-btn {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 15px 20px; /* Adjust padding for larger button */
-    border-radius: 8px; /* Adjust border-radius for a rounder button */
-    text-decoration: none;
-    margin-top: 10px;
-    margin-right: 20px; /* Adjust the right margin to separate buttons */
-    position: relative;
-    overflow: hidden;
-    z-index: 1; /* Ensure the text stays above the pseudo-element */
+  position: relative;
+  overflow: hidden;
+}
+
+.download-btn::before,
+.download-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #00AFEF; /* Change to the desired fill color */
+  transition: width 0.3s ease-in-out;
 }
 
 .download-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #555; /* Adjust the background color */
-    transition: width 0.3s ease-in-out;
-    z-index: -1; /* Move the pseudo-element below the button content */
+  left: 100%;
 }
 
-.download-btn:hover::before {
-    width: 100%;
+.download-btn:hover::before,
+.download-btn:hover::after {
+  width: 100%;
 }
 
   
